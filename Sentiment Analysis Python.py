@@ -11,10 +11,13 @@ from tweepy import OAuthHandler
 from textblob import TextBlob
 class TwitterClient(object):
     def __init__(self):
-        consumer_key="X0OigQRDXP7hWfcqxbSOT0fx6"
-        consumer_secret="Fa6aua5m487BgxdtAR0mSwn03Q1hpCIIfG72Hg4eKlsEz6lgto"
-        access_token="429784830-fOosOs7Mt0NU1EqnRnzoTzS3wrJ3GgjDbW699Zwc"
-        access_token_secret="ilV7Oo2oSJMJTXnnYMa0d8SdCPeHUT7RVLw0nXokyKalZ"
+        #login with twiiter
+        # go to https://apps.twitter.com/app/new and create new prooject
+        #get consumer key and secret ket paste and run
+        consumer_key=""
+        consumer_secret=""
+        access_token=""
+        access_token_secret=""
         try:
             self.auth=OAuthHandler(consumer_key,consumer_secret)
             self.auth.set_access_token(access_token,access_token_secret)
